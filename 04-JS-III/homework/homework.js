@@ -27,12 +27,12 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
 
-  var valor=[];
  for(let i=0 ; i<array.length; i++){
-
-        valor[i]= array[i]+1;
+        // array[i] = array[i]+1;
+        //array[i]++;
+        array[i] +=1 ;
 }
-return valor;
+return array;
 
 }
 
@@ -65,14 +65,7 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
 
-  var stringConcat="";
-for(let i=0; i<palabras.length; i++){
-
-    stringConcat+= palabras[i]+ " ";
-
-}
-
-return stringConcat=stringConcat.trim();
+return palabras.join(' ');
 
 }
 
@@ -81,7 +74,17 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-      return array.includes(elemento);
+      //return array.includes(elemento);
+
+      for(let i=0; i< array.length; i++){
+
+          if (array[i]===elemento){
+
+            return true;
+
+          }
+          return false;
+      }
 
 }
 
