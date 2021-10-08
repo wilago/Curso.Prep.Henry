@@ -109,6 +109,7 @@ function promedioResultadosTest(resultadosTest) {
 
     promedio+=resultadosTest[i];
 
+
   }
   return promedio/resultadosTest.length;
 }
@@ -262,7 +263,7 @@ function mayorACien(array) {
 
   for(let i=0; i<array.length; i++){
 
-    if(array[i]>=101){ result.push(array[i]);}
+    if(array[i]>100){ result.push(array[i]);}
     
   }
 
@@ -279,17 +280,16 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   var result=[];
-  var numero=0;
+  var valor=numero;
   for(let i=0; i<10; i++){
-    numero=numero+2;
-    result[i]=numero;
+    result.push(valor+=2);
 
-    if (numero==i){
+    if (valor==i){
 
       break;
-      return "Se interrumpió la ejecución";
+      
     }
-   
+    return "Se interrumpió la ejecución";
 }
 
 return result;
@@ -304,6 +304,19 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+
+var result =[]; 
+var valor =numero; 
+for (let i = 0; i < 10; i++) {
+  
+  if (i===5){
+  continue;  
+      }
+    result.push(valor+=2);
+  
+}
+return result;
+
 }
 
 
