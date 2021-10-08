@@ -81,8 +81,16 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-      return array.includes(elemento);
+      ///return array.includes(elemento);
+      for (let i=0 ; i < array.length; i++){
 
+        if (array[i]=== elemento)
+        {
+          return true;
+        }
+
+      }
+      return false;
 }
 
 
@@ -282,14 +290,15 @@ function breakStatement(numero) {
   var result=[];
   var valor=numero;
   for(let i=0; i<10; i++){
-    result.push(valor+=2);
+    result.push(numero+=2);
 
-    if (valor==i){
-
+    if (numero==i){
+      result=[];
+      result="Se interrumpió la ejecución";
       break;
-      
+           
     }
-    return "Se interrumpió la ejecución";
+         
 }
 
 return result;
