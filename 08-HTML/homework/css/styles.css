@@ -1,0 +1,25 @@
+html {
+
+    color: red;
+    font-size: 12px;
+}
+
+img{
+    width:400px; 
+
+}
+
+#thirdDiv {
+    
+    width: 500px;
+    height: 600px;
+    background: yellow;
+}
+
+#spanId {
+
+    font-size: 18px;
+    margin: 50px;
+    padding: 50px;
+    border: 10px  solid black    ;
+}
