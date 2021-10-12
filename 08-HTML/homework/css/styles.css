@@ -4,16 +4,33 @@ html {
     font-size: 12px;
 }
 
+body {
+
+    background-image: url("https://img.blogs.es/anexom/wp-content/uploads/2020/08/pinterest-fondos-1.jpg");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    margin-right:auto;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+  }
+
 img{
     width:400px; 
+    height: 300px;
 
 }
+
+
 
 #thirdDiv {
     
     width: 500px;
     height: 600px;
     background: yellow;
+    align-self:center;
+
 }
 
 #spanId {
@@ -21,5 +38,14 @@ img{
     font-size: 18px;
     margin: 50px;
     padding: 50px;
-    border: 10px  solid black    ;
+    border: 10px  solid black;
+    align-self:center;
+}
+
+.box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
 }
