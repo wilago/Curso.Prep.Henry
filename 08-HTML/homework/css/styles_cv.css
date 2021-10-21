@@ -4,32 +4,71 @@
   padding: 10px;
   box-sizing: border-box;
 
-}
+} 
 
-.header {
-  background: #000;
+.padre{
+
+
+
 }
-  .nombre{
-    background: #4A403A;
-  } 
-      h1{
-        background: #137420;
+    .header {
+      display: flex;
+      flex-flow: row;
+      background: #000;
+    }
+
+    .titulos{
+      display: flex;
+      flex-flow: column;
+      flex: 10 1 auto;
+      background: #ca875d;
       }
-  .profesion{
-    background: #A45D5D;
-  }
-  h2{
-    background: #0499f0;
-  }
+          .nombre{
 
-  .foto{
-    background: #FFC069;
-  }
-.section {
-  background: #000;
-}
+            background: #4A403A;
+          } 
+              h1{
+                background: #137420;
+              }
+          .profesion{
+            background: #A45D5D;
+          }
+            h2{
+              background: #0499f0;
+            }
 
-.footer {
-  background: #000;
-}
+    .foto{
+        flex: 2 1 auto;
+        background: #FFC069;
+      }
+    .section {
+      background: #000;
+    }
+      .articulos {
+        
+        background: #0F00FF;
+
+      }
+          .datosPersonal {
+
+            background: #1597E5;
+
+          }
+      .aside{
+
+        background: #9D84B7;
+
+      }
+        .datosLavoreles{
+
+          background: #B2F9FC;
+        }
+
+    .footer {
+      background: #000;
+    }
+
+      .pie{
+        background: #4E9F3D;
+      }
 
