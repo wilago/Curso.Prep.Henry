@@ -74,19 +74,18 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-      //return array.includes(elemento);
 
-      for(let i=0; i< array.length; i++){
+      ///return array.includes(elemento);
+      for (let i=0; i < array.length; i++){
 
-          if (array[i]===elemento){
+        if (array[i]=== elemento)
+        {
+          return true;
+        }
 
-            return true;
-
-          }
-          return false;
       }
-
-}
+      return false;
+  }
 
 
 function agregarNumeros(numeros) {
@@ -112,6 +111,7 @@ function promedioResultadosTest(resultadosTest) {
 
     promedio+=resultadosTest[i];
 
+
   }
   return promedio/resultadosTest.length;
 }
@@ -129,20 +129,18 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  var resultado=0;
-  if (Array.isArray(arguments)){
-
-    for(let i=0; i<arguments.length; i++){
-
-      resultado*=arguments[i];
-  
+ 
+    var total = 1;
+    if(arguments.length < 1){
+      return 0;
     }
-      return resultado;
 
-  }
-  else {
-    return 0;
-  }
+    for (let i = 0; i < arguments.length; i++) {
+      
+      total = total * arguments[i];
+      
+    }
+    return total;
 
 }
 
@@ -265,7 +263,7 @@ function mayorACien(array) {
 
   for(let i=0; i<array.length; i++){
 
-    if(array[i]>=101){ result.push(array[i]);}
+    if(array[i]>100){ result.push(array[i]);}
     
   }
 
@@ -282,17 +280,17 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   var result=[];
-  var numero=0;
+  var valor=numero;
   for(let i=0; i<10; i++){
-    numero=numero+2;
-    result[i]=numero;
+    result.push(numero+=2);
 
     if (numero==i){
-
+      result=[];
+      result="Se interrumpió la ejecución";
       break;
-      return "Se interrumpió la ejecución";
+           
     }
-   
+         
 }
 
 return result;
@@ -307,6 +305,19 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+
+var result =[]; 
+var valor =numero; 
+for (let i = 0; i < 10; i++) {
+  
+  if (i===5){
+  continue;  
+      }
+    result.push(valor+=2);
+  
+}
+return result;
+
 }
 
 
