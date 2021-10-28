@@ -6,10 +6,12 @@
 
 } 
 
+
+body{
+  font-family: 'Montserrat', sans-seri
+}
 .padre{
-
-
-
+  display: flex;
 }
     .header {
       display: flex;
@@ -43,21 +45,28 @@
       }
     .section {
       background: #000;
+      display: flex;
     }
       .articulos {
         
         background: #0F00FF;
+        flex:2 1 auto;
+        display: flex;
+        flex-flow: column;
 
       }
           .datosPersonal {
 
             background: #1597E5;
+            flex:1 1 auto
 
           }
       .aside{
 
         background: #9D84B7;
-
+        flex:1 1 auto;
+        display: flex;
+        flex-flow: column;
       }
         .datosLavoreles{
 
@@ -66,9 +75,25 @@
 
     .footer {
       background: #000;
+      display: flex;
+      justify-content: center;
     }
 
       .pie{
         background: #4E9F3D;
       }
+
+
+@media all and (max-width: 800px){
+
+  .section{
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column;
+  }
+
+
+}
+  
 

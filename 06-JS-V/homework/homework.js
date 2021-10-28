@@ -39,10 +39,10 @@ function agregarMetodoPrototype(Constructor) {
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
 
-Constructor.prototype.saludar= function (){
+    Constructor.prototype.saludar= function (){
 
-    return "Hello World!";
-}
+        return "Hello World!";
+    }
 
 }
 
