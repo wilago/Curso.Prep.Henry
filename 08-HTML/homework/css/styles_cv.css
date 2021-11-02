@@ -41,6 +41,8 @@ body{
 
     .foto{
         flex: 2 1 auto;
+        display: flex;
+        justify-content: center;
         background: #FFC069;
       }
     .section {
