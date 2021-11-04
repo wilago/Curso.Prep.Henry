@@ -16,42 +16,42 @@ body{
     .header {
       display: flex;
       flex-flow: row;
-      background: #000;
+      /*background: #000;*/
     }
 
     .titulos{
       display: flex;
       flex-flow: column;
       flex: 10 1 auto;
-      background: #ca875d;
+      /*background: #ca875d;*/
       }
           .nombre{
 
-            background: #4A403A;
+            /*background: #4A403A;*/
           } 
               h1{
-                background: #137420;
+                /*background: #137420;*/
               }
           .profesion{
-            background: #A45D5D;
+            /*background: #A45D5D;*/
           }
             h2{
-              background: #0499f0;
+              /*background: #0499f0;*/
             }
 
     .foto{
         flex: 2 1 auto;
         display: flex;
         justify-content: center;
-        background: #FFC069;
+       /* background: #FFC069;*/
       }
     .section {
-      background: #000;
+      /*background: #000;*/
       display: flex;
     }
       .articulos {
         
-        background: #0F00FF;
+        /*background: #0F00FF;*/
         flex:2 1 auto;
         display: flex;
         flex-flow: column;
@@ -59,20 +59,20 @@ body{
       }
           .datosPersonal {
 
-            background: #1597E5;
+            /*background: #1597E5;*/
             flex:1 1 auto
 
           }
       .aside{
 
-        background: #9D84B7;
+        /*background: #9D84B7;*/
         flex:1 1 auto;
         display: flex;
         flex-flow: column;
       }
         .datosLavoreles{
 
-          background: #B2F9FC;
+         /* background: #B2F9FC;*/
         }
 
     .footer {
@@ -82,7 +82,7 @@ body{
     }
 
       .pie{
-        background: #4E9F3D;
+        /*background: #4E9F3D;*/
       }
 
 
